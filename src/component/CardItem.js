@@ -1,6 +1,6 @@
 import "./CardItem.css";
 
-const CardItem = ({img, title, description, price}) => {
+const CardItem = ({ img, title, description, price }) => {
     return (
         <>
             <div className="card-box">

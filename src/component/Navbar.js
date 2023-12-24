@@ -1,8 +1,8 @@
-const Navbar = ({products, addProductClick}) => {
+const Navbar = () => {
   return (
     <>
       <nav
-        style={{ padding: "0 10px", height: "15vh" }}
+        style={{ padding: "0 10px", height: "15vh", border: '2px solid black' }}
         className="navbar navbar-expand-lg navbar-light bg-light"
       >
         <div className="container-fluid">
@@ -31,16 +31,12 @@ const Navbar = ({products, addProductClick}) => {
               className="navbar-nav me-auto mb-2 mb-lg-0"
             >
               <li className="nav-item">
-                <div
-                  className="nav-link active md-6"
-                  aria-current="page"
-                  onClick={products}
-                >
+                <div className="nav-link active md-6" aria-current="page">
                   Products
                 </div>
               </li>
               <li className="nav-item">
-                <div className="nav-link active" aria-current="page" onClick={addProductClick}>
+                <div className="nav-link active" aria-current="page">
                   AddProduct
                 </div>
               </li>
